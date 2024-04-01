@@ -16,3 +16,12 @@
 12/03/2024 16:41:41 - https://www.alura.com.br - Online: true
 12/03/2024 16:41:41 - https://www.caelum.com.br/3333 - Online: false
 12/03/2024 16:41:42 - https://httpbin.org/status/200 - Online: true
+20/03/2024 16:33:54 - https://www.alura.com.br - Online: true
+20/03/2024 16:33:55 - https://www.caelum.com.br/3333 - Online: false
+20/03/2024 16:33:56 - https://httpbin.org/status/200 - Online: true
+20/03/2024 16:34:01 - https://www.alura.com.br - Online: true
+20/03/2024 16:34:01 - https://www.caelum.com.br/3333 - Online: false
+20/03/2024 16:34:01 - https://httpbin.org/status/200 - Online: true
+20/03/2024 16:34:06 - https://www.alura.com.br - Online: true
+20/03/2024 16:34:06 - https://www.caelum.com.br/3333 - Online: false
+20/03/2024 16:34:06 - https://httpbin.org/status/200 - Online: true

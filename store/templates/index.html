@@ -1,0 +1,53 @@
+{{define "Index"}}
+<!DOCTYPE html>
+<html lang="en">
+{{template "_head"}}
+<body>
+    <div class="container">
+        {{template "_navbar"}}
+        <div class="card">
+            <div class="card-header">
+                <h1 class="d-flex justify-content-center">Produtos</h1>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .}}
+                            <tr>
+                                <td>{{.Name}}</td>
+                                <td>{{.Description}}</td>
+                                <td>{{.Price}}</td>
+                                <td>{{.Amount}}</td>
+                                <td><a href="/edit-product?id={{.Id}}" class="btn btn-info">Editar</a></td>
+                                <td><button class="btn btn-danger" onclick="onDelete('{{.Id}}')">Deletar</button></td>
+                            </tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a href="/new-product" class="btn btn-primary">Cadastrar novo produto</a>
+        </div>
+    </div>
+</body>
+<script>
+    const onDelete = (id) => {
+        const response = confirm("Deseja realmente remover este produto?")
+        if (response) {
+            window.location.href = `/api/product/delete?id=${id}`
+        }
+    }
+</script>
+</html>
+{{end}}
